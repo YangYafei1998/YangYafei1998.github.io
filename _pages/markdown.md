@@ -20,12 +20,12 @@ redirect_from:
   * _talks/
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.jpg
+* Profile image (can set in _config.yml): images/profile.png
 
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/YafeiYang1998.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
+* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
   * Green check: successful build
   * Orange circle: building
   * Red X: error

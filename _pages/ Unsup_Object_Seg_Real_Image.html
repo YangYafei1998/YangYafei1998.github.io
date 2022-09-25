@@ -36,14 +36,14 @@ author_profile: False
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Google Analytics (DO NOT copy following section) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQGR4X733Q"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQGR4X733Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-RQGR4X733Q');
-  </script>
+  </script> -->
   <!-- End Google Analytics -->  
 </head>
 <body>
@@ -104,15 +104,18 @@ author_profile: False
   <h3>Video</h3>
   <hr/>
   <div class="row" style="text-align:center">
-    <div class="col-xs-6 text-center">
+    <!-- <div class="col-xs-6 text-center">
       <h4><u>Short presentation</u> (3min)</h4>
       <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
         <iframe class="embed-responsive-item text-center" src="https://www.youtube.com/embed/j20MBc1hWGQ" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           style="width:100%; clip-path:inset(1px 1px);" allowfullscreen></iframe>
       </div>
-    </div>
-
+    </div> -->
+    <video width="640" height="480" controls>
+      <source src="../assets/Unsup_Object_Seg_Real_Image/final presentation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
     <!-- <div class="col-xs-6 text-center">
       <h4><u>Long presentation</u> (11min)</h4>
       <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
@@ -138,12 +141,12 @@ author_profile: False
       <img src="../assets/Unsup_Object_Seg_Real_Image/object_color_gradient.png" alt="object_color_gradient.png" class="text-center" style="width: 100%; max-width: 900px">
     </div>
     <div class="col-xs-6">
-      <img src="../assets/Unsup_Object_Seg_Real_Image/object_shape_concavity.png" alt="object_shape_concavity.png" class="text-center" style="width: 100%; max-width: 900px;">
+      <img src="../assets/Unsup_Object_Seg_Real_Image/object_shape_concavity.png" alt="object_shape_concavity.png" class="text-center" style="width: 60%; max-width: 900px; margin-top: 7px">
     </div>
   </div>
   <div class="row" style="text-align: center">
     <div class="col-xs-6">
-      <div style="width: 90%; max-width: 900px; padding-top:10px">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
       <p>
           Given an RGB image, we first convert it to grayscale, then calculate its gradient horizontally and vertically.
           Specifically, to avoid the effect from background, we remove gradient from object boundary.
@@ -163,7 +166,7 @@ author_profile: False
 
   <div class="row" style="text-align: center">
     <div class="col-xs-6">
-      <h4 style="margin-right: 20%"><u>Inter-object Color Similarity</u></h4>
+      <h4 style="margin-right: 0%"><u>Inter-object Color Similarity</u></h4>
     </div>
     <div class="col-xs-6">
       <h4><u>Inter-object Shape Variation</u></h4>
@@ -171,17 +174,17 @@ author_profile: False
   </div>
   <div class="row" style="text-align: center">
     <div class="col-xs-6">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/inter_object_color_similarity.png" alt="inter_object_color_similarity.png" class="text-center" style="width: 100%; max-width: 900px; margin-top:
+        <img src="../assets/Unsup_Object_Seg_Real_Image/inter_object_color_similarity.png" alt="inter_object_color_similarity.png" class="text-center" style="width: 80%; max-width: 900px; margin-top:
         0px">
     </div>
     <div class="col-xs-6">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/inter_object_shape_variation.png" alt="inter_object_shape_variation.png" class="text-center" style="width: 100%; max-width: 900px; margin-top:
+        <img src="../assets/Unsup_Object_Seg_Real_Image/inter_object_shape_variation.png" alt="inter_object_shape_variation.png" class="text-center" style="width: 80%; max-width: 900px; margin-top:
         10px">
     </div>
   </div>
   <div class="row" style="text-align: center">
     <div class="col-xs-6">
-      <div style="width: 90%; max-width: 900px; padding-top:10px">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
       <p>
           Given an image consisiting of multiple objects, we first calculate the average RGB color of each object.
           In RGB space, we average Euclidean distance between each pair of objects.
@@ -198,45 +201,105 @@ author_profile: False
     </div>
   </div>
 
+  <h3>Ablations</h3>
+  <hr/>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <h4 style="margin-right: 0%"><u>C: Single <b>C</b>olor Ablation</u></h4>
+    </div>
+    <div class="col-xs-6">
+      <h4><u>S: Convex <b>S</b>hape Ablation</u></h4>
+    </div>
+  </div>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <img src="../assets/Unsup_Object_Seg_Real_Image/C_single_color_ablation.png" alt="C_single_color_ablation.png" class="text-center" style="width: 60%; max-width: 900px">
+    </div>
+    <div class="col-xs-6">
+      <img src="../assets/Unsup_Object_Seg_Real_Image/S_convex_shape_ablation.png" alt="S_convex_shape_ablation.png" class="text-center" style="width: 60%; max-width: 900px; margin-top: 7px">
+    </div>
+  </div>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
+      <p>
+        Remove color gradient inside each object such that:
+        Object Color Gradient is effectively reduced;
+        Inter-object Color Similarity remains similar.
+        
+      </p>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
+        <p>
+          Make convex the shape of each object such that:
+          Object Shape Concavity is effectively reduced;
+          Inter-object Shape Variation remains similar.          
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <h4 style="margin-right: 0%"><u>T: <b>T</b>exture Replaced Ablation</u></h4>
+    </div>
+    <div class="col-xs-6">
+      <h4><u>U: <b>U</b>niform Scale Ablation</u></h4>
+    </div>
+  </div>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+        <img src="../assets/Unsup_Object_Seg_Real_Image/T_texture_replaced_ablation.png" alt="inter_object_color_similarity.png" class="text-center" style="width: 60%; max-width: 900px; margin-top:
+        0px">
+    </div>
+    <div class="col-xs-6">
+        <img src="../assets/Unsup_Object_Seg_Real_Image/U_uniformed_scale_ablation.png" alt="inter_object_shape_variation.png" class="text-center" style="width: 60%; max-width: 900px; margin-top:
+        10px">
+    </div>
+  </div>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
+      <p>
+        Replaced with distinctive texture for all objects such that:
+        Object Color Gradient remains similar;
+        Inter-object Color Similarity is effectively reduced.
+      </p>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
+        <p>
+          Rescale for all objects such that:
+          Object Shape Concavity remains similar;
+          Inter-object Shape Variation is effectively reduced.
+          
+        </p>
+      </div>
+    </div>
+  </div>
   <h3>Results</h3>
   <hr/>
   <div class="row" style="text-align: center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
-    <h4><u>Standard image clustering benchmarks</u><br>
-      <span style="background-color:#ffffd4;">(we urge the visitors to click <a href="tsf_prototypes/overview.html">
-      HERE</a> for random prototype transformation examples)</span></h4>
-      <img src="prototypes.jpg" alt="prototypes.jpg" class="text-center" style="width: 100%; max-width: 1000px;">
+    <h4><u>Complexity Factor Distributions</u><br>
+      <p></p>
+      <img src="../assets/Unsup_Object_Seg_Real_Image/complexity_factor_results.png" alt="complexity_factor_results.png" class="text-center" style="width: 100%; max-width: 1000px;">
   </div>
   <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
-    <h4><u>MegaDepth locations</u></h4>
-      <img src="megadepth.jpg" alt="megadepth.jpg" class="text-center" style="width: 100%; max-width: 1000px;
+    <h4><u>Quantitatively Segmentation Performance</u></h4>
+      <p></p>
+      <img src="../assets/Unsup_Object_Seg_Real_Image/experiments_quantitative.png" alt="experiments_quantitative.png" class="text-center" style="width: 100%; max-width: 1000px;
       margin-top: 5px">
   </div>
   <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
-    <h4><u>MegaDepth Florence: detailed results</u></h4>
-      <p>We show the 6 best qualitatives prototypes learned using DTI clustering
-      with 20 clusters for Florence location in MegaDepth dataset. For each cluster, we show the 20 samples leading to
-      minimal reconstruction errors among all the samples in the cluster as well as corresponding transformed 
-      prototypes. Note how it manages to model real image transformations like illumination variations and viewpoint
-      changes.</p>
-      <img src="firenze.jpg" alt="firenze.jpg" class="text-center" style="width: 100%; max-width: 1100px">
-  </div>
-  <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem;padding-bottom:1rem;">
-    <h4><u>Instagram hashtags</u></h4>
-      <p>We show the 5 best qualitatives prototypes learned using DTI clustering
-      with 40 clusters for different Instagram photo collections. Each collection corresponds to a large unfiltered set
-      of Instagram images (from 10k to 15k) associated to a particular hashtag. Identifying visual trends or iconic
-      poses in this case is very challenging as most of the images are noise. You can visualize the type of collected 
-      images directly in Instagram: 
-      <a href=https://www.instagram.com/explore/tags/balitemple/>#balitemple</a>,
-      <a href=https://www.instagram.com/explore/tags/santaphoto/>#santaphoto</a>,
-      <a href=https://www.instagram.com/explore/tags/trevifountain/>#trevifountain</a>,
-      <a href=https://www.instagram.com/explore/tags/weddingkiss/>#weddingkiss</a>,
-      <a href=https://www.instagram.com/explore/tags/yogahandstand/>#yogahandstand</a>.</p>
-      <img src="instagram.jpg" alt="instagram.jpg" class="text-center"
-           style="width:100%;max-width:850px;margin-top:1rem;padding-right:1.5rem;">
+    <h4><u>Qualitative Segmentation Performance</u></h4>
+      <p></p>
+      <img src="../assets/Unsup_Object_Seg_Real_Image/experiments_qualitative.png" alt="experiments_qualitative.png" class="text-center" style="width: 100%; max-width: 1100px">
   </div>
 
-  <h3>Resources</h3>
+  <!-- <h3>Resources</h3>
   <hr/>
   <div class="row" style="text-align: center">
     <div class="col-xs-0 col-lg-0"></div>
@@ -259,22 +322,22 @@ author_profile: False
         border-radius:0.5em;"></a>
     </div>
     <div class="col-xs-0 col-lg-0"></div>
-  </div>
+  </div> -->
     <h4 style="padding-top:0.5em">BibTeX</h4>
     If you find this work useful for your research, please cite:
     <div class="card">
       <div class="card-block">
         <pre class="card-text clickselect">
-@inproceedings{monnier2020dticlustering,
-  title={{Deep Transformation-Invariant Clustering}},
-  author={Monnier, Tom and Groueix, Thibault and Aubry, Mathieu},
+@inproceedings{,
+  title={{}},
+  author={},
   booktitle={NeurIPS},
-  year={2020},
+  year={2022},
 }</pre>
       </div>
     </div>
 
-  <h3>Further information</h3>
+  <!-- <h3>Further information</h3>
   <hr/>
   If you like this project, please check out other related works from our group:
   <h4>Follow-ups</h4>
@@ -303,23 +366,21 @@ author_profile: False
       <a href="https://arxiv.org/abs/1802.05384">Groueix et al. - AtlasNet: A Papier-Mache Approach to Learning 3D
         Surface Generation (CVPR 2018)</a>
     </li>
-  </ul>
+  </ul> -->
 
-  <h3>Acknowledgements</h3>
+  <!-- <h3>Acknowledgements</h3>
   <hr/>
   <p>
     This work was supported in part by <a href="https://enherit.enpc.fr/">ANR project EnHerit</a> ANR-17-CE23-0008,
     project Rapid Tabasco, gifts  from  Adobe and HPC resources from GENCI-IDRIS (Grant 2020-AD011011697). We thank 
     Bryan Russell, Vladimir Kim, Matthew Fisher, Fran&#231;ois Darmon, Simon Roburin, David Picard, Michael Ramamonjisoa,
     Vincent Lepetit, Elliot Vincent, Jean Ponce, William Peebles and Alexei Efros for inspiring discussions and valuable feedback.
-  </p>
+  </p> -->
 </div>
 
 <div class="container" style="padding-top:3rem; padding-bottom:3rem">
   <p style="text-align:center">
-    &#169; You are welcome to copy this website's code for your personal use, please attribute the source with a link
-    back to this page and remove the analytics code in the header. Possible misspellings: tom monier, tom monnie,
-    tom monie, monniert.
+    &#169; This page takes inspiration from <a>http://imagine.enpc.fr/~monniert/DTIClustering/</a>.
   </p>
 </div>
 

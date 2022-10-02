@@ -101,6 +101,211 @@ author_profile: False
     Our research results suggest that future work should exploit more explicit objectness biases in the network design. 
   </p>
 
+  <h3>Performance Disparity</h3>
+  <hr/>
+  <div class="row" style="text-align: center">
+
+    <div class="col-xs-6 border-right">
+      <h4>Training</h4>
+      <div class="col-xs-6">
+        <h4><u>synthetic datasets</u></h4>
+        <div class="col-xs-4" >
+          <text style="padding-left: 0%">dSprites</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/train/0_input_image.png" alt="dSprites/train/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">Tetris</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/train/0_input_image.png" alt="Tetris/train/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">CLEVR</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/train/1_input_image.png" alt="CLEVR/train/1_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/train/0_gt_mask.png" alt="dSprites/train/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/train/0_gt_mask.png" alt="Tetris/train/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/train/1_gt_mask.png" alt="CLEVR/train/1_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/train/IODINE/train_result.gif" alt="dSprites/train/IODINE/train_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/train/IODINE/train_result.gif" alt="Tetris/train/IODINE/train_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/train/IODINE/sample 1/train_result.gif" alt="CLEVR/train/IODINE/sample/train_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/train/SlotAtt/train_result_05.gif" alt="dSprites/test/SlotAtt/train_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/train/SlotAtt/train_result_05.gif" alt="Tetris/test/SlotAtt/train_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/train/SlotAtt/sample 1/train_result_05.gif" alt="CLEVR/test/SlotAtt/sample 1/train_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        
+      </div>
+
+      <div class="col-xs-6">
+        <h4><u>real-world datasets</u></h4>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">YCB</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/train/0_input_image.png" alt="YCB/train/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">ScanNet</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/train/3_input_image.png" alt="ScanNet/train/3_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">COCO</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/train/1_input_image.png" alt="COCO/train/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/train/0_gt_mask.png" alt="YCB/train/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/train/3_gt_mask.png" alt="ScanNet/train/3_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/train/1_gt_mask.png" alt="COCO/train/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/train/IODINE/train_result.gif" alt="YCB/train/IODINE/train_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/train/IODINE/sample 3/train_result.gif" alt="ScanNet/train/IODINE/sample 3/train_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/train/IODINE/sample 1/train_result.gif" alt="COCO/train/IODINE/sample 1/train_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/train/SlotAtt/train_result_05.gif" alt="YCB/test/SlotAtt/train_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/train/SlotAtt/sample 3/train_result_05.gif" alt="ScanNet/test/SlotAtt/sample 3/train_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/train/SlotAtt/sample 1/train_result_05.gif" alt="COCO/test/SlotAtt/sample 1/train_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="col-xs-6">
+      <h4>Testing</h4>
+      <div class="col-xs-6">
+        <h4><u>synthetic datasets</u></h4>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">dSprites</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/test/0_input_image.png" alt="dSprites/test/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">Tetris</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/test/0_input_image.png" alt="Tetris/test/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">CLEVR</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/test/0_input_image.png" alt="CLEVR/test/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/test/0_gt_mask.png" alt="dSprites/test/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/test/0_gt_mask.png" alt="Tetris/test/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/test/0_gt_mask.png" alt="CLEVR/test/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+       
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/test/IODINE/test_result.gif" alt="dSprites/test/IODINE/test_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/test/IODINE/test_result.gif" alt="Tetris/test/IODINE/test_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/test/IODINE/test_result.gif" alt="CLEVR/test/IODINE/test_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+       
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/dSprites/test/SlotAtt/test_result_05.gif" alt="dSprites/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/Tetris/test/SlotAtt/test_result_05.gif" alt="Tetris/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/CLEVR/test/SlotAtt/test_result_05.gif" alt="CLEVR/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+    
+
+      </div>
+
+      <div class="col-xs-6">
+        <h4><u>real-world datasets</u></h4>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">YCB</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/test/0_input_image.png" alt="YCB/test/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">ScanNet</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/test/0_input_image.png" alt="ScanNet/test/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <text style="padding-left: 0%">COCO</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/test/0_input_image.png" alt="COCO/test/0_input_image.png" class="text-center" style="width: 150%; max-width: 900px; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/test/0_gt_mask.png" alt="YCB/test/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/test/0_gt_mask.png" alt="ScanNet/test/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/test/0_gt_mask.png" alt="COCO/test/0_gt_mask.png" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/test/IODINE/test_result.gif" alt="YCB/test/IODINE/test_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/test/IODINE/test_result.gif" alt="ScanNet/test/IODINE/test_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/test/IODINE/test_result.gif" alt="COCO/test/IODINE/test_result.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB/test/SlotAtt/test_result_05.gif" alt="YCB/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet/test/SlotAtt/test_result_05.gif" alt="ScanNet/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>
+        <div class="col-xs-4">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO/test/SlotAtt/test_result_05.gif" alt="COCO/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+        </div>  
+
+      </div>
+    </div>
+
+    
+  </div>
+
   <h3>Video</h3>
   <hr/>
   <div class="row" style="text-align:center;">

@@ -59,3 +59,16 @@ table {
   vertical-align: middle;
   float: none;
 }
+
+.border-right {
+  border-right: 3px solid #448D87;
+}
+.borders {
+  border-left: 1px solid #448D87;
+  border-right: 1px solid #448D87;
+  margin: -1px;
+}
+.border-left {
+  border-left: 1px solid #448D87;
+}
+

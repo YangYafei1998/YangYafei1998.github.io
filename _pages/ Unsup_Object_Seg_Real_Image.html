@@ -101,7 +101,7 @@ author_profile: False
     Our research results suggest that future work should exploit more explicit objectness biases in the network design. 
   </p>
 
-  <h3>Performance Disparity</h3>
+  <h3>Unsupervised Segmentation Performance</h3>
   <hr/>
   <div class="row" style="text-align: center">
 
@@ -306,6 +306,7 @@ author_profile: False
 
     </div>
 
+    <text style="padding-top: 10%">* First row are input images. Second row are GT object masks. Third row are results from IODINE. Last row are results from SlotAtt.</text>
     
   </div>
 
@@ -465,9 +466,74 @@ author_profile: False
     </div>
   </div>
 
-  <h3>Qualitative Results</h3>
+  <h3>Qualitative Results from Ablation</h3>
   <hr/>
+  
   <div class="row" style="text-align: center">
+    <div class="col-xs-12" style="padding-bottom: 2.5%;">
+      <h4>Full Ablation</h4>
+  
+      <div class="col-xs-4">
+        <h4><u>YCB</u></h4>
+        <div class="col-xs-3" >
+          <text style="font-size: 12px; white-space:nowrap;">YCB-CSTU</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/0_input_image.png" alt="YCB_CSTU/test/0_input_image.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">GT mask</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/0_gt_mask.png" alt="YCB_CSTU/test/0_gt_mask.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">IODINE</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/IODINE/test_result.gif" alt="YCB_CSTU/test/IODINE/test_result.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">SlotAtt</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/SlotAtt/test_result_05.gif" alt="YCB_CSTU/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+      </div>
+  
+      <div class="col-xs-4">
+        <h4><u>ScanNet</u></h4>
+        <div class="col-xs-3" >
+          <text style="font-size: 12px; white-space:nowrap; margin-left: -20%;">ScanNet-CSTU</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_input_image.png" alt="ScanNet_CSTU/test/0_input_image.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">GT mask</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_gt_mask.png" alt="ScanNet_CSTU/test/0_gt_mask.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">IODINE</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/IODINE/test_result.gif" alt="ScanNet_CSTU/test/IODINE/test_result.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">SlotAtt</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/SlotAtt/test_result_075.gif" alt="ScanNet_CSTU/test/SlotAtt/test_result_075.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+      </div>
+  
+      <div class="col-xs-4">
+        <h4><u>COCO</u></h4>
+        <div class="col-xs-3" >
+          <text style="font-size: 12px; white-space:nowrap; margin-left: -15%;">COCO-CSTU</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_input_image.png" alt="COCO_CSTU/test/0_input_image.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">GT mask</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_gt_mask.png" alt="COCO_CSTU/test/0_gt_mask.png" class="text-center" style="width: 140%; max-width: 900px; padding-top: 0%; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">IODINE</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/IODINE/test_result.gif" alt="COCO_CSTU/test/IODINE/test_result.gif" class="text-center" style="width: 140%; max-width: 900px; padding-top: 0%; margin-left: -20%;">
+        </div>
+        <div class="col-xs-3">
+          <text style="font-size: 12px; white-space:nowrap;">SlotAtt</text>
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/SlotAtt/test_result_05.gif" alt="COCO_CSTU/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 140%; max-width: 900px; padding-top: 0%; margin-left: -20%;">
+        </div>
+      </div>
+    </div>
+  
 
     <div class="col-xs-6">
       <h4>Object-level Ablation</h4>
@@ -513,7 +579,7 @@ author_profile: False
           <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_C/test/SlotAtt/test_result_05.gif" alt="ScanNet_C/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
         </div>
         <div class="col-xs-4">
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_C/test/SlotAtt/test_result_075.gif" alt="COCO_C/test/SlotAtt/test_result_075.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
+          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_C/test/SlotAtt/test_result_05.gif" alt="COCO_C/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 150%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
         </div>
 
         
@@ -668,106 +734,10 @@ author_profile: False
     </div>
 
 
-    <div class="col-xs-12" style="padding-top: 2.5%;">
-      <h4>Full Ablation</h4>
-
-      <div class="col-xs-4">
-        <h4><u>YCB</u></h4>
-        <div class="col-xs-3" >
-          <text style="font-size: 12px; white-space:nowrap;">YCB-CSTU</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/0_input_image.png" alt="YCB_CSTU/test/0_input_image.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">GT mask</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/0_gt_mask.png" alt="YCB_CSTU/test/0_gt_mask.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">IODINE</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/IODINE/test_result.gif" alt="YCB_CSTU/test/IODINE/test_result.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">SlotAtt</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/SlotAtt/test_result_05.gif" alt="YCB_CSTU/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-      </div>
-
-      <div class="col-xs-4">
-        <h4><u>ScanNet</u></h4>
-        <div class="col-xs-3" >
-          <text style="font-size: 12px; white-space:nowrap; margin-left: -20%;">ScanNet-CSTU</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_input_image.png" alt="ScanNet_CSTU/test/0_input_image.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">GT mask</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_gt_mask.png" alt="ScanNet_CSTU/test/0_gt_mask.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">IODINE</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/IODINE/test_result.gif" alt="ScanNet_CSTU/test/IODINE/test_result.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">SlotAtt</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/SlotAtt/test_result_075.gif" alt="ScanNet_CSTU/test/SlotAtt/test_result_075.gif" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-      </div>
-
-      <div class="col-xs-4">
-        <h4><u>COCO</u></h4>
-        <div class="col-xs-3" >
-          <text style="font-size: 12px; white-space:nowrap; margin-left: -15%;">COCO-CSTU</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_input_image.png" alt="COCO_CSTU/test/0_input_image.png" class="text-center" style="width: 140%; max-width: 900px; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">GT mask</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_gt_mask.png" alt="COCO_CSTU/test/0_gt_mask.png" class="text-center" style="width: 140%; max-width: 900px; padding-top: 0%; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">IODINE</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/IODINE/test_result.gif" alt="COCO_CSTU/test/IODINE/test_result.gif" class="text-center" style="width: 140%; max-width: 900px; padding-top: 0%; margin-left: -20%;">
-        </div>
-        <div class="col-xs-3">
-          <text style="font-size: 12px; white-space:nowrap;">SlotAtt</text>
-          <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/SlotAtt/test_result_05.gif" alt="COCO_CSTU/test/SlotAtt/test_result_05.gif" class="text-center" style="width: 140%; max-width: 900px; padding-top: 0%; margin-left: -20%;">
-        </div>
-      </div>
-
-
-      <!-- <div class="col-xs-1">
-        <text style="padding-left: 0%; ">ScanNet - CSTU</text>
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_input_image.png" alt="ScanNet_CSTU/test/0_input_image.png" class="text-center" style="width: 120%; max-width: 900px; margin-left: 0%;">
-      </div>
-      <div class="col-xs-1">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_gt_mask.png" alt="ScanNet_CSTU/test/0_gt_mask.png" class="text-center" style="width: 120%; max-width: 900px; padding-top: 5%; margin-left: -10%;">
-      </div>
-
-
-      <div class="col-xs-1">
-        <text style="padding-left: 0%;">COCO - CSTU</text>
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_input_image.png" alt="COCO_CSTU/test/0_input_image.png" class="text-center" style="width: 120%; max-width: 900px; margin-left: 0%;">
-      </div>
-      <div class="col-xs-1">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_gt_mask.png" alt="COCO_CSTU/test/1_gt_mask.png" class="text-center" style="width: 120%; max-width: 900px; padding-top: 5%; margin-left: 10%;">
-      </div> -->
-      
-
-      <!-- 
-      <div class="col-xs-1">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/YCB_CSTU/test/0_gt_mask.png" alt="YCB_CSTU/test/0_gt_mask.png" class="text-center" style="width: 120%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
-      </div>
-      <div class="col-xs-1">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/ScanNet_CSTU/test/0_gt_mask.png" alt="ScanNet_CSTU/test/0_gt_mask.png" class="text-center" style="width: 120%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
-      </div>
-      <div class="col-xs-1">
-        <img src="../assets/Unsup_Object_Seg_Real_Image/GIF/COCO_CSTU/test/0_gt_mask.png" alt="COCO_CSTU/test/1_gt_mask.png" class="text-center" style="width: 120%; max-width: 900px; padding-top: 5%; margin-left: -25%;">
-      </div>
-     -->
-
-
-    </div>
   </div>
 
 
-  <h3>Quantitative Results</h3>
+  <h3>Quantitative Results from Ablation</h3>
   <hr/>
   <div class="row" style="text-align: center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
     <h4><u>Complexity Factor Distributions</u><br>
